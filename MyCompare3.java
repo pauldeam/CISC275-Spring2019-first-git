@@ -3,6 +3,25 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+class Animal{
+    String name;
+    int numLegs;
+    
+    public int getLegs(){
+        return numLegs;
+    }
+}
+
+class Dog extends Animal{
+    Dog(String name, int numLegs){
+        this.name = name;
+        this.numLegs = numLegs;
+    }
+    public String toString(){
+        return name + ", " + numLegs;
+    }
+}
+
 public class MyCompare3 {
 	
 	public static void main(String[] args){
@@ -21,4 +40,6 @@ public class MyCompare3 {
 		});
 		System.out.println(dogs);
 	}
+    
+    
 }
